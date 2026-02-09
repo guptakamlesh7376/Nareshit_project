@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../src/styles/style.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+        .accordion {
+            width: 75%;
+        }
+
+        .accordion {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="">
+        <h1 class="fs-5  fw-bold p-2">Naresh Institute and Technologies</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark px-lg-4">
+            <div class="container-fluid">
+                <div class="navbar-brand d-flex align-items-center ">
+                    <img src="../images/nit-logo.jpg" class="me-2 rounded rounded-circle" alt="" width="40px">
+                    <span class="fs-3 fw-bold brand-name">NIT </span>
+                </div>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                    <span class="navbar-toggler-icon"> </span>
+                </button>
+                <div class="navbar-collapse collapse d-xxl-flex justify-content-between" id="nav">
+                    <ul class="navbar-nav ps-3">
+                        <li class="nav-item"><a href="../../index.html"
+                                class="nav-link link bi-house-door-fill fw-bold">&nbsp;HOME</a>
+                        </li>
+                        <li class="nav-item"><a href="./course.html"
+                                class="nav-link link bi-mortarboard-fill fw-bold">&nbsp;COURSES</a></li>
+                        <li class="nav-item"><a href="./faculty.html"
+                                class="nav-link link bi-person-vcard-fill fw-bold">&nbsp;FACULTIES</a></li>
+                        <li class="nav-item"><a href="./services.html"
+                                class="nav-link link bi bi-motherboard-fill fw-bold">&nbsp;SERVICES</a>
+                        </li>
+                        <li class="nav-item"><a href="./about.html"
+                                class="nav-link link bi-info-circle-fill fw-bold">&nbsp;ABOUT</a></li>
+                        <li class="nav-item"><a href="./contact.html"
+                                class="nav-link link bi bi-telephone-fill fw-bold">&nbsp;CONTACT</a></li>
+                    </ul>
+
+                    <div class="dropstart border-1 dropdown1">
+                        <button class="dropdown-toggle bg-transparent border-0 fw-bold" data-bs-toggle="dropdown"
+                            style="font-size: 18px; color: rgb(235, 235, 231);">&nbsp; Account
+                            &nbsp; <span class="bi bi-person-circle"></span> </button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a data-bs-target="#exampleModal" data-bs-toggle="modal"
+                                    class="dropdown-item-text bi-box-arrow-in-right text-decoration-none">&nbsp; Sign
+                                    In</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a data-bs-target="#exampleModal1" data-bs-toggle="modal"
+                                    class="dropdown-item-text bi-person-fill-add text-decoration-none">&nbsp; Sign
+                                    Up</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a data-bs-target="#exampleModal2" data-bs-toggle="modal"
+                                    class="dropdown-item-text bi-lock-fill text-decoration-none">&nbsp; Change
+                                    Password</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body bg-dark text-white">
+                                    <h3 class="modal-title bi-person-circle text-center fw-bold" id="exampleModalLabel">
+                                        &nbsp;Sign In
+                                    </h3>
+                                    <form action="" class="row g-3 px-5 pt-4 pb-2">
+                                        <div class="col-12">
+                                            <label for="#username" class="form-label fw-bold fs-6">Username</label>
+                                            <input type="text" class="form-control p-2" id="username"
+                                                placeholder="Enter your username">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="#password" class="form-label fw-bold fs-6">Password</label>
+                                            <input type="password" class="form-control p-2" id="password"
+                                                placeholder="Enter your password">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="checkbox" id="rememberme" class="form-check-input">&nbsp;
+                                            <label for="#rememberme" class="form-check-label"> Remember
+                                                me</label>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="#" class="text-decoration-none">Forgot Password?</a>
+                                        </div>
+                                        <div class="text-center ">
+                                            <button class="btn btn-success fs-5 px-5">Sign In</button>
+                                        </div>
+                                    </form>
+                                    <div class="not-account text-center my-3">
+                                        <span>Don't have account? <a href="#exampleModal1"
+                                                data-bs-target="#exampleModal1" data-bs-toggle="modal"
+                                                class="text-decoration-none">Register</a></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body bg-dark text-white">
+                                    <h3 class="modal-title bi-person-fill text-center fw-bold" id="exampleModalLabel">
+                                        &nbsp;Sign Up
+                                    </h3>
+                                    <form action="" class="row g-3 px-2 pt-4 pb-2">
+                                        <div class="col-6">
+                                            <label for="fullname" class="form-label fw-bold fs-6">Full Name</label>
+                                            <input type="text" class="form-control p-2" id="fullname"
+                                                placeholder="Enter your fullname">
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="#mobile" class="form-label fw-bold fs-6">Mobile</label>
+                                            <input type="text" class="form-control p-2" id="mobile"
+                                                placeholder="Enter your mobile number">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="#email" class="form-check-label fw-bold"> Email</label>
+                                            <input type="text" id="email" class="form-control"
+                                                placeholder="Enter your email">
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="#password" class="form-label fw-bold">Password</label>
+                                            <input type="password" id="password" name="password" class="form-control"
+                                                placeholder="Enter password">
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="#confirmpass" class="form-label fw-bold">Confirm
+                                                Password</label>
+                                            <input type="password" id="password" name="password" class="form-control"
+                                                placeholder="Confirm your password">
+                                        </div>
+                                        <div class="text-center mt-3">
+                                            <button class="btn btn-success fs-5 px-5">Sign Up</button>
+                                        </div>
+                                    </form>
+                                    <div class="not-account text-center my-3">
+                                        <span>Do you have an account? <a role="button" data-bs-target="#exampleModal"
+                                                data-bs-toggle="modal" class="text-decoration-none">Login</a></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body bg-dark text-white">
+                                    <h3 class="modal-title bi-key-fill text-center fw-bold" id="exampleModalLabel">
+                                        &nbsp;Change Password
+                                    </h3>
+                                    <form action="" class="row g-3 px-5 pt-4 pb-2">
+                                        <div class="col-12">
+                                            <label for="#oldpass" class="form-label fw-bold fs-6">Old Password</label>
+                                            <input type="password" class="form-control p-2" id="oldpass"
+                                                placeholder="Enter old password">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="#newpass" class="form-label fw-bold fs-6">New Password</label>
+                                            <input type="password" class="form-control p-2" id="newpass"
+                                                placeholder="Enter new password">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="#confirmpass" class="form-label fw-bold"> Confirm
+                                                Password</label>
+                                            <input type="password" id="confirmpass" class="form-control"
+                                                placeholder="Confirm your password">
+                                        </div>
+                                        <div class="text-center my-4">
+                                            <button class="btn btn-success fs-5 w-100">Update Password</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="p-md-5 p-4 aboutus-containter">
+            <div class=" about-first-container px-md-5">
+                <div class="image">
+                    <img src="../images/award.jpeg" alt="" class="rounded-3">
+                </div>
+                <div class="text text-dark">
+                    <h1 class="display-6 fw-bold mb-xl-4 mb-3"><span class="alternate-text1  ">About</span><span
+                            class="alternate-text2"> Us</span></h1>
+                    <h3>The New Way to success</h3>
+                    <p>NNV Naresh, Founder and Managing Director.</p>
+                    <p>A recipient of “International Achievers Award for Education Excellence“,</p>
+                    <p class="text-align-justify">NNV Naresh is an entrepreneur armed with a noble vision to make a
+                        difference
+                        in
+                        the career aspirations of the
+                        students. 20+ years of experience in the education sector, Naresh is the founder and the driving
+                        force
+                        behind
+                        the victorious journey of NareshIT.</p>
+                </div>
+            </div>
+        </div>
+        <div class="history ">
+            <div class="history-inner" style="background-color: rgba(0, 0, 0, 0.5);">
+                <h2 class="text-white text-center">Our Journey</h2>
+                <div class="history-accordian d-flex justify-content-center">
+                    <div class="accordion  mt-4" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    2003 : A Humble Beginning
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <h4>A Humble Beginning</h4>
+                                    <ul type="circle">
+                                        <li>Started in the year 2003 with an intention to provide a Just Opportunity to
+                                            maximum Students who deserve a chance in the IT Industry!!</li>
+                                        <li>In a small campus of 4000 SFT</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    2018 : 15+ Years of Training Academic Students
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <h4>15+ Years of Training Academic Students…</h4>
+                                    <ul type="circle">
+                                        <li>Trained over 10 Lakh + Students.</li>
+                                        <li>From 1800+ Colleges.</li>
+                                        <li>Spanning across 16 States.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    2018 : 15+ Years of Training the Corporates
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <h4>15+ Years of Training the Corporates...</h4>
+                                    <ul type="circle">
+                                        <li>Preferred Corporate Training</li>
+                                        <li>Partner for 100+ IT Majors in Hyderabad.</li>
+                                        <li>Provided Corporate Training in 400 + Corporates.</li>
+                                        <li>Corporate Training aimed at up-skilling seasoned professionals.</li>
+                                        <li>Naresh IT spans in a carpet area of 75,000 SFT. 100+ State of the Art
+                                            Classrooms.</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                    2018 : Our Infrastructure
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <h4>Our Infrastructure</h4>
+                                    <ul type="circle">
+                                        <li>Can accommodate 12000 Students on any given day.</li>
+                                        <li>140+ Faculty Members with an average of 8+ years of experience.</li>
+                                        <li>Dedicated Placement Assistance Division .</li>
+                                        <li>Corporate Training aimed at up-skilling seasoned professionals.</li>
+                                        <li>Naresh IT spans in a carpet area of 75,000 SFT. 100+ State of the Art
+                                            Classrooms.</li>
+                                        <li>Advanced AV Recording Studio and Delivery Units for our Virtual Trainings
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                    2023 : Our Infrastructure
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <h4>Our Infrastructure</h4>
+                                    <ul type="circle">
+                                        <li>Can accommodate 12000 Students on any given day.</li>
+                                        <li>140+ Faculty Members with an average of 8+ years of experience.</li>
+                                        <li>Dedicated Placement Assistance Division .</li>
+                                        <li>Corporate Training aimed at up-skilling seasoned professionals.</li>
+                                        <li>Naresh IT spans in a carpet area of 75,000 SFT. 100+ State of the Art
+                                            Classrooms.</li>
+                                        <li>Advanced AV Recording Studio and Delivery Units for our Virtual Trainings
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aboutus-cards-container py-5 px-md-5 px-3 ">
+            <div class="aboutus-cards">
+                <img src="../images/aboutus1.png" alt="">
+                <h4 class="mt-md-2">Career-Focused Tech Academy</h4>
+                <p class="mt-md-2 mb-4">Providing job-oriented training designed to boost your career prospects in the
+                    tech
+                    industry.
+                </p>
+            </div>
+            <div class="aboutus-cards">
+                <img src="../images/aboutus2.png" alt="">
+                <h4 class="mt-md-2">Guidance from Industry Experts</h4>
+                <p class="mt-md-2 mb-4">Learn directly from experienced professionals who bring real-world expertise to
+                    your learning journey.
+                </p>
+            </div>
+            <div class="aboutus-cards">
+                <img src="../images/aboutus3.png" alt="">
+                <h4 class="mt-md-2">Comprehensive & Future-Ready Curriculum</h4>
+                <p class="mt-md-2 mb-4">Stay ahead with an in-depth course structure that aligns with the latest
+                    industry trends and technologies.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white">
+        <div class="row contain-row">
+            <div class="foot1 col-md-3 col-sm-12 ">
+                <!-- <img src="./public/images/nit-logo.jpg" alt="" class="rounded  mb-2" width="120"> -->
+                <h2 class="">Naresh
+                    Institute and Technologies</h2>
+                <p style="text-align: justify;">NNV Naresh is an entrepreneur armed with a noble vision to make a
+                    difference in
+                    the
+                    career aspirations of the
+                    students. 20+ years of experience in the education sector, Naresh is the founder and the driving
+                    force behind
+                    the victorious journey of NareshIT.</p>
+            </div>
+            <div class="foot2 col-md-2 col-sm-12 px-md-5 mt-2 mt-lg-0">
+                <span class="fw-bold">Company</span>
+                <ul class="list-unstyled">
+                    <li class="mt-3">Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Courses</li>
+                    <li>Faculties</li>
+                </ul>
+            </div>
+            <div class="foot3 col-md-3 col-sm-12 mt-2 mt-lg-0 ">
+                <span class="fw-bold">Quick Access</span>
+                <div class="d-flex mt-4">
+                    <img src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"
+                        alt="" class="w-50 me-2">
+                    <img src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"
+                        alt="" class="w-50">
+                </div>
+                <aside class="mt-4 fs-4">
+                    <span class="bi bi-instagram me-2"></span>
+                    <span class="bi bi-facebook me-2"></span>
+                    <span class="bi bi-twitter-x me-2"></span>
+                    <span class="bi bi-linkedin me-2"></span>
+                </aside>
+            </div>
+            <div class="foot4 col-md-4 col-sm-12 ps-md-5  mt-4 mt-lg-0">
+                <span class="fw-bold">Reach Us</span>
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-2"><span class="fw-bold bi-telephone "> Phone : </span> +96-8888-7777</li>
+                    <li class="mb-2"><span class="fw-bold bi-envelope"> Email : </span> info@nareshit.com</li>
+                    <li class="bi bi-building"><span class="fw-bold"> Head Office : </span> 2nd Floor, Durga Bhavani
+                        Plaza,
+                        Ameerpet, Hyderabad,
+                        500016.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../src/styles/style.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+    <header class="">
+        <h1 class="fs-5  fw-bold p-2">Naresh Institute and Technologies</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark px-lg-4">
+            <div class="container-fluid">
+                <div class="navbar-brand d-flex align-items-center ">
+                    <img src="../images/nit-logo.jpg" class="me-2 rounded rounded-circle" alt="" width="40px">
+                    <span class="fs-3 fw-bold brand-name">NIT </span>
+                </div>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                    <span class="navbar-toggler-icon"> </span>
+                </button>
+                <div class="navbar-collapse collapse d-xxl-flex justify-content-between" id="nav">
+                    <ul class="navbar-nav ps-3">
+                        <li class="nav-item"><a href="../../index.html"
+                                class="nav-link link bi-house-door-fill fw-bold">&nbsp;HOME</a>
+                        </li>
+                        <li class="nav-item"><a href="./course.html"
+                                class="nav-link link bi-mortarboard-fill fw-bold">&nbsp;COURSES</a></li>
+                        <li class="nav-item"><a href="./faculty.html"
+                                class="nav-link link bi-person-vcard-fill fw-bold">&nbsp;FACULTIES</a></li>
+                        <li class="nav-item"><a href="./services.html"
+                                class="nav-link link bi bi-motherboard-fill fw-bold">&nbsp;SERVICES</a>
+                        </li>
+                        <li class="nav-item"><a href="./about.html"
+                                class="nav-link link bi-info-circle-fill fw-bold">&nbsp;ABOUT</a></li>
+                        <li class="nav-item"><a href="./contact.html"
+                                class="nav-link link bi bi-telephone-fill fw-bold">&nbsp;CONTACT</a></li>
+                    </ul>
+
+                    <div class="dropstart border-1 dropdown1">
+                        <button class="dropdown-toggle bg-transparent border-0 fw-bold" data-bs-toggle="dropdown"
+                            style="font-size: 18px; color: rgb(235, 235, 231);">&nbsp; Account
+                            &nbsp; <span class="bi bi-person-circle"></span> </button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a data-bs-target="#exampleModal" data-bs-toggle="modal"
+                                    class="dropdown-item-text bi-box-arrow-in-right text-decoration-none">&nbsp; Sign
+                                    In</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a data-bs-target="#exampleModal1" data-bs-toggle="modal"
+                                    class="dropdown-item-text bi-person-fill-add text-decoration-none">&nbsp; Sign
+                                    Up</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a data-bs-target="#exampleModal2" data-bs-toggle="modal"
+                                    class="dropdown-item-text bi-lock-fill text-decoration-none">&nbsp; Change
+                                    Password</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body bg-dark text-white">
+                                    <h3 class="modal-title bi-person-circle text-center fw-bold" id="exampleModalLabel">
+                                        &nbsp;Sign In
+                                    </h3>
+                                    <form action="" class="row g-3 px-5 pt-4 pb-2">
+                                        <div class="col-12">
+                                            <label for="#username" class="form-label fw-bold fs-6">Username</label>
+                                            <input type="text" class="form-control p-2" id="username"
+                                                placeholder="Enter your username">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="#password" class="form-label fw-bold fs-6">Password</label>
+                                            <input type="password" class="form-control p-2" id="password"
+                                                placeholder="Enter your password">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="checkbox" id="rememberme" class="form-check-input">&nbsp;
+                                            <label for="#rememberme" class="form-check-label"> Remember
+                                                me</label>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="#" class="text-decoration-none">Forgot Password?</a>
+                                        </div>
+                                        <div class="text-center ">
+                                            <button class="btn btn-success fs-5 px-5">Sign In</button>
+                                        </div>
+                                    </form>
+                                    <div class="not-account text-center my-3">
+                                        <span>Don't have account? <a href="#exampleModal1"
+                                                data-bs-target="#exampleModal1" data-bs-toggle="modal"
+                                                class="text-decoration-none">Register</a></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body bg-dark text-white">
+                                    <h3 class="modal-title bi-person-fill text-center fw-bold" id="exampleModalLabel">
+                                        &nbsp;Sign Up
+                                    </h3>
+                                    <form action="" class="row g-3 px-2 pt-4 pb-2">
+                                        <div class="col-6">
+                                            <label for="fullname" class="form-label fw-bold fs-6">Full Name</label>
+                                            <input type="text" class="form-control p-2" id="fullname"
+                                                placeholder="Enter your fullname">
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="#mobile" class="form-label fw-bold fs-6">Mobile</label>
+                                            <input type="text" class="form-control p-2" id="mobile"
+                                                placeholder="Enter your mobile number">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="#email" class="form-check-label fw-bold"> Email</label>
+                                            <input type="text" id="email" class="form-control"
+                                                placeholder="Enter your email">
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="#password" class="form-label fw-bold">Password</label>
+                                            <input type="password" id="password" name="password" class="form-control"
+                                                placeholder="Enter password">
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="#confirmpass" class="form-label fw-bold">Confirm
+                                                Password</label>
+                                            <input type="password" id="password" name="password" class="form-control"
+                                                placeholder="Confirm your password">
+                                        </div>
+                                        <div class="text-center mt-3">
+                                            <button class="btn btn-success fs-5 px-5">Sign Up</button>
+                                        </div>
+                                    </form>
+                                    <div class="not-account text-center my-3">
+                                        <span>Do you have an account? <a role="button" data-bs-target="#exampleModal"
+                                                data-bs-toggle="modal" class="text-decoration-none">Login</a></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body bg-dark text-white">
+                                    <h3 class="modal-title bi-key-fill text-center fw-bold" id="exampleModalLabel">
+                                        &nbsp;Change Password
+                                    </h3>
+                                    <form action="" class="row g-3 px-5 pt-4 pb-2">
+                                        <div class="col-12">
+                                            <label for="#oldpass" class="form-label fw-bold fs-6">Old Password</label>
+                                            <input type="password" class="form-control p-2" id="oldpass"
+                                                placeholder="Enter old password">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="#newpass" class="form-label fw-bold fs-6">New Password</label>
+                                            <input type="password" class="form-control p-2" id="newpass"
+                                                placeholder="Enter new password">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="#confirmpass" class="form-label fw-bold"> Confirm
+                                                Password</label>
+                                            <input type="password" id="confirmpass" class="form-control"
+                                                placeholder="Confirm your password">
+                                        </div>
+                                        <div class="text-center my-4">
+                                            <button class="btn btn-success fs-5 w-100">Update Password</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="faculty p-md-4">
+
+            <h1 class="text-center fw-bold"><span class="alternate-text1">Our</span><span class="alternate-text2">
+                    Faculties</span></h1>
+
+            <div class="faculty-container p-md-4 ">
+
+                <div class="card faculty-card">
+                    <div class="card-header p-0">
+                        <img src="../images/facultyNatraj.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="fw-bold ">Mr. Natraj</h4>
+                        <span>Java / J2EE Trainer</span>
+                    </div>
+                </div>
+
+                <div class="card faculty-card">
+                    <div class="card-header p-0">
+                        <img src="../images/facultyVK.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="fw-bold ">Mr. K V Rao</h4>
+                        <span>Python & Java Trainer</span>
+                    </div>
+                </div>
+
+                <div class="card faculty-card">
+                    <div class="card-header p-0">
+                        <img src="../images/facultySudhakar.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="fw-bold ">Mr. Sudhakar Sharma</h4>
+                        <span>UI Full Stack Trainer</span>
+                    </div>
+                </div>
+
+                <div class="card faculty-card">
+                    <div class="card-header p-0">
+                        <img src="../images/facultyKishan.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="fw-bold ">Mr. Kishan B</h4>
+                        <span>Java Trainer</span>
+                    </div>
+                </div>
+
+                <div class="card faculty-card">
+                    <div class="card-header p-0">
+                        <img src="../images/facultySatish.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="fw-bold ">Mr. Satish Gupta</h4>
+                        <span>Python & Java Trainer</span>
+                    </div>
+                </div>
+
+                <div class="card faculty-card">
+                    <div class="card-header p-0">
+                        <img src="../images/facultyHari.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="fw-bold ">Mr. Hari Krishna</h4>
+                        <span>Java/J2EE Trainer</span>
+                    </div>
+                </div>
+
+                <div class="card faculty-card ">
+                    <div class="card-header p-0">
+                        <img src="../images/facultySL.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="fw-bold ">Mr. Sudhakar L</h4>
+                        <span>MS.NET & Oracle Trainer</span>
+                    </div>
+                </div>
+
+                <div class="card faculty-card ">
+                    <div class="card-header p-0">
+                        <img src="../images/facultyKishore.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="fw-bold ">Mr. Kishore</h4>
+                        <span>C & C++ Trainer</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white">
+        <div class="row contain-row">
+            <div class="foot1 col-md-3 col-sm-12 ">
+                <!-- <img src="./public/images/nit-logo.jpg" alt="" class="rounded  mb-2" width="120"> -->
+                <h2 class="">Naresh
+                    Institute and Technologies</h2>
+                <p style="text-align: justify;">NNV Naresh is an entrepreneur armed with a noble vision to make a
+                    difference in
+                    the
+                    career aspirations of the
+                    students. 20+ years of experience in the education sector, Naresh is the founder and the driving
+                    force behind
+                    the victorious journey of NareshIT.</p>
+            </div>
+            <div class="foot2 col-md-2 col-sm-12 px-md-5 mt-2 mt-lg-0">
+                <span class="fw-bold">Company</span>
+                <ul class="list-unstyled">
+                    <li class="mt-3">Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Courses</li>
+                    <li>Faculties</li>
+                </ul>
+            </div>
+            <div class="foot3 col-md-3 col-sm-12 mt-2 mt-lg-0 ">
+                <span class="fw-bold">Quick Access</span>
+                <div class="d-flex mt-4">
+                    <img src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"
+                        alt="" class="w-50 me-2">
+                    <img src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"
+                        alt="" class="w-50">
+                </div>
+                <aside class="mt-4 fs-4">
+                    <span class="bi bi-instagram me-2"></span>
+                    <span class="bi bi-facebook me-2"></span>
+                    <span class="bi bi-twitter-x me-2"></span>
+                    <span class="bi bi-linkedin me-2"></span>
+                </aside>
+            </div>
+            <div class="foot4 col-md-4 col-sm-12 ps-md-5  mt-4 mt-lg-0">
+                <span class="fw-bold">Reach Us</span>
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-2"><span class="fw-bold bi-telephone "> Phone : </span> +96-8888-7777</li>
+                    <li class="mb-2"><span class="fw-bold bi-envelope"> Email : </span> info@nareshit.com</li>
+                    <li class="bi bi-building"><span class="fw-bold"> Head Office : </span> 2nd Floor, Durga Bhavani
+                        Plaza,
+                        Ameerpet, Hyderabad,
+                        500016.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

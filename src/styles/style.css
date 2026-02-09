@@ -1,0 +1,471 @@
+:root {
+  --light-bronze: #cb997eff;
+  --desert-sand: #ddbea9ff;
+  --powder-petal: #ffe8d6ff;
+  --ash-grey: #b7b7a4ff;
+  --dry-sage: #a5a58dff;
+  --dusty-olive: #6b705cff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header h1 {
+  position: sticky;
+  top: 0;
+  background: rgb(235, 235, 231);
+  text-align: center;
+  color: var(--dusty-olive);
+  margin-bottom: 0;
+}
+nav{
+  
+  background: linear-gradient(to right, #002569, #00886d);;
+  /*#004988  #000743*/
+  padding: 20px 0px;
+
+}
+.brand-name{
+  color:rgb(235, 235, 231) ;
+  font-family: engravers mt;
+}
+button {
+  padding: 10px;
+  background-color: #2563eb;
+  color: #f3f4f6;
+}
+.nav-link.link{
+  color: white !important;
+  font-size: 15px;
+}
+.nav-item
+{
+  margin-right: 8px;
+  
+}
+.carousel-item img{
+  width: 100vw;
+  height: 590px;
+}
+.alternate-text1{
+color: #002569;
+}
+.alternate-text2{
+  color: #00886d;
+}
+
+.courses{
+  background-color: #f6f4f4;
+}
+
+.course-cards{
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
+.course-card{
+  width: 22%;
+  transform: scale(1);
+  transition: 1s;
+  flex-basis: 23%;
+  margin-bottom: 25px;
+
+}
+.spic{
+  width: 200px;
+}
+.course-card:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+.view-more{
+  color: #00886d;
+  width: 200px; 
+  border:2px solid #002569;
+  background-color: white;
+  transition: 0.8s;
+  border-radius: 10px;
+}
+.view-more:hover{
+   background: linear-gradient(to right,#002569,#00886d); 
+   /* border: none; */
+   color: white;
+   transition: 1s;
+}
+.about{
+  background:linear-gradient(to right,#002569,#0141b9,#002569);
+  padding: 70px 100px;
+  margin-top:  0px ;
+}
+
+/* ---------Placed Cards-------------- */
+.placed{
+  background-color: rgb(245, 245, 245);
+  padding: 50px;
+}
+
+.placed-cards{
+  display: flex;
+  flex-wrap:wrap;
+  padding: 25px 25px 15px;
+  justify-content:space-between;
+}
+.card-body{
+  padding: 0px 30px 0px;
+}
+.placed-stu{
+  margin-bottom: 30px;
+  flex-basis: 23%;
+  gap: 40;
+  transform: scale3d(1,1,1);
+  transition: 500ms;
+}
+.placed-stu img{
+  width: 100%;
+}
+.placed-stu:hover{
+  transform: scale3d(1,1,1.3);
+   box-shadow: 2px 2px 80px gray;
+   transition: 700ms;
+}
+
+
+/* --------------services------------------ */
+.services{
+  padding: 50px;
+  background: linear-gradient(to right,#00886d, #38dfbe, #00886d);
+}
+.service-card-container{
+  display: flex;
+  padding: 40px 40px 0px;
+  justify-content: space-between;
+}
+.service-card{
+  width: 29%;
+  aspect-ratio: 1;
+  position: relative;
+ 
+}
+.service-content{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 128px;
+  overflow: hidden;
+  transition: 1s;
+  background-color: rgb(42, 218, 153,0.4);
+  font-size: 16px;
+}
+
+.service-content:hover {
+  height: 320px;
+  transition:  2s;
+}
+.inner{
+  padding: 0px 40px;
+}
+.testimonials{
+  background-color: #ebebeb;
+  padding: 40px 20px;
+  
+}
+.test-image{
+  display: flex;
+  justify-content: center;
+}
+.test-image img{
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+.test-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0px;
+}
+.test-body h4{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.item-contain{
+  display: flex;
+  gap: 40px;
+  padding: 50px 100px;
+}
+.item1{
+  flex-basis: 50%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+.item2{
+  border-radius: 5px;
+  padding: 20px;
+  flex-basis: 50%;
+  background-color: white;
+}
+.foot2 ul li{
+  margin-bottom: 15px;
+}
+footer{
+  padding: 10px 120px;
+}
+.foot1{
+  padding-right: 30px;
+}
+.contain-row{
+  padding: 40px;
+}
+
+/* courses page  */
+.nav-link{
+  color: rgb(89, 89, 89);
+}
+
+.faculty-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.faculty-card{
+    flex-basis: 23%;
+    margin: 0px 20px 20px 0px;
+    
+}
+.faculty-card img{
+  width: 100%;
+}
+
+.service{
+  padding:40px;
+  background: url("../../public/images/backgroundService.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+.service-item{
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.service-item-image{
+  flex-basis: 45%;
+}
+.service-item-image img{
+  width: 100%;
+  border-radius: 10px;
+}
+.service-item-desc{
+  color: rgb(90, 88, 88);
+  text-align: justify;
+  flex-basis: 48%;
+}
+
+.aboutus-containter{
+  background-color: #f9f7f7;
+}
+.about-first-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-first-container .image{
+  flex-basis: 47%;
+}
+.about-first-container .text{
+  flex-basis: 50%;
+}
+.history{
+  background:url("../../public/images/aboutus4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.history-inner{
+  padding: 40px 40px 100px;
+}
+.aboutus-cards-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.aboutus-cards{
+  border: 1px solid rgb(193, 193, 193);
+  padding: 20px;
+  width: 31%;
+  border-radius: 20px;
+  flex-basis: 31%;
+}
+.aboutus-cards img{
+  width: 60px;
+}
+.contact-1{
+  background-color: #f6f4f4;
+}
+.contact-2{
+  padding:40px 80px;
+}
+@media screen and (orientation: landscape)
+{
+  .view-div{
+    margin-top: 60px;
+  }
+  .about{
+    display: flex;
+  }
+  .image,.text{
+    flex-basis: 50%;
+  }
+  .image img{
+    width: 90%;
+    height: 400px;
+  }
+
+  .text{
+    color: white;
+    margin-left: 25px;
+    padding: 0px 15px;
+    font-size: 18px;
+   
+  }
+  .course-card{
+    margin-right: 25px;
+  }
+  
+}
+@media screen and (orientation: portrait)
+{
+  .about{
+    padding: 40px 20px;
+    color: white;
+  }
+  .dropdown1{
+    margin-left: 5px;
+  }
+  .dropdown-menu {
+    position: static !important;
+    float: none;
+    width: 100%;
+    background-color: var(--dusty-olive); /* same background as parent */
+    border: none;
+    box-shadow: none;
+  }
+  .course-card{
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .text,.image{
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+  .text h1{
+    text-align: center;
+    margin-top: 25px;
+  }
+  .image img{
+    width: 100%;
+  }
+  .view-more{
+    margin: auto;
+  }
+  .placed{
+    padding: 35px 5px;
+  }
+  .placed-cards{
+  padding: 2px;
+  justify-content:space-between;
+}
+.placed-stu{
+  margin-bottom: 30px;
+  flex-basis: 49%;
+  gap: 40;
+  transform: scale3d(1,1,1);
+  transition: 500ms;
+}
+.card-title,.card-text{
+  font-size: 14px;
+}
+.services{
+  padding:40px 5px;
+  
+}
+.service-card-container{
+  flex-wrap: wrap;
+  padding: 20px 10px 0px;
+}
+.service-card{
+  flex-basis: 100%;
+  margin-bottom: 30px;
+}
+.testimonials{
+  padding: 40px 0px;
+}
+.item-contain{
+  flex-wrap: wrap;
+  padding: 30px 5px;
+  gap: 40px;
+}
+.item1,.item2{
+  flex-basis: 100%;
+  padding: 10px;
+}
+.inner{
+  padding: 0px 10px;
+}
+.contain-row{
+  padding: 0px;
+}
+footer{
+  padding: 50px 20px;
+}
+.faculty h1{
+ margin: 20px 0px;
+}
+.faculty-card{
+  flex-basis: 90%;
+  margin-right: 0px;
+}
+
+.service{
+  padding:40px 7px;
+}
+.service-item{
+  padding: 40px 7px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+.service-item-image{
+  flex-basis: 100%;
+}
+.service-item-image img{
+  width: 100%;
+  border-radius: 10px;
+}
+.service-item-desc{
+  color: rgb(90, 88, 88);
+  text-align: justify;
+  flex-basis: 100%;
+}
+.about-first-container .image{
+  flex-basis: 100%;
+}
+.about-first-container .text{
+  flex-basis: 100%;
+}
+.history-inner{
+  padding: 40px 10px 60px;
+}
+.aboutus-cards{
+  flex-basis: 100%;
+  margin: 20px;
+}
+.contact-2{
+  padding:20px 10px;
+}
+}
